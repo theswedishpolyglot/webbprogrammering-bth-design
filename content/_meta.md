@@ -1,5 +1,5 @@
 ---
-Logo: image/Apple MacBook Pro.png
+Logo: assets/img/Apple MacBook Pro.png
 Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
