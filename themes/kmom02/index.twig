@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ meta.title }} - {{ config.site_title }}</title>
+    <link rel="icon" type="image/png" href="{{ assets_url }}/img/leaf_256x256.png">
+    <link rel="stylesheet" href="{{ base_url }}/themes/kmom02/css/style.css">
+</head>
+
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        {{ content }}
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
