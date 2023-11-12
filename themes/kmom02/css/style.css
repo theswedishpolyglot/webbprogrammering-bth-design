@@ -6422,9 +6422,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-/*#7D997D;*/
-/*#054205*/
-/*#CADDCA*/
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -6485,7 +6482,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #000;
-  text-shadow: 0 0 3px #ffffff;
+  text-shadow: 0 0 3px #CADDCA;
   text-align: center;
 }
 
