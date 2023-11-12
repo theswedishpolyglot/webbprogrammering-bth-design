@@ -6460,8 +6460,8 @@ pre code {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #7D997D;
-  color: #000;
+  background-color: #000;
+  color: #e0e0e0;
   line-height: 1.6;
   margin: auto;
   padding: 0;
@@ -6481,7 +6481,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  color: #000;
+  color: #e0e0e0;
   text-shadow: 0 0 3px #0F0;
   text-align: center;
 }
@@ -6498,14 +6498,14 @@ a:hover {
 button {
   font-family: "Roboto", sans-serif;
   background-color: #0F0;
-  color: #7D997D;
+  color: #000;
   padding: 0.5em 1em;
   border-radius: 0.25em;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 button:hover {
-  border-color: #000;
+  border-color: #e0e0e0;
 }
 
 *,
@@ -6551,9 +6551,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption {
 }
 
 input, textarea, select {
-  background-color: #3F663F;
-  color: #000;
-  border: 1px solid #153315;
+  background-color: #121212;
+  color: #e0e0e0;
+  border: 1px solid #333;
 }
 
 .container {

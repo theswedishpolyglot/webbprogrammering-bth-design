@@ -7,7 +7,7 @@
     <div class="technology-page-container">
 
             <aside class="sidebar">
-                {% for page in pages("technology") if not page.hidden %}
+                {% for page in pages("analysis") if not page.hidden %}
                 <a href="{{ page.url }}">{{ page.title }}</a>
                 {% endfor %}
             </aside>

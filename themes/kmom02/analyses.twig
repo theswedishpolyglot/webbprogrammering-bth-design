@@ -11,7 +11,7 @@
                 <h1>{{ meta.title }}</h1>
             </header>
             <main class="grid-container">
-                {% for page in pages("technology") if not page.hidden %}
+                {% for page in pages("analysis") if not page.hidden %}
                 <div class="grid-item">
                     <a href="{{ page.url }}">{{ page.title }}</a>
                 </div>
