@@ -11,3 +11,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'base';
 @import 'responsive';
 @import 'technologies';
+
+.nav a, .nav-toggle {
+    color: #153315;
+}

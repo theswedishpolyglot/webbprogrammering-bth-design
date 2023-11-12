@@ -6422,6 +6422,9 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/*#7D997D;*/
+/*#054205*/
+/*#CADDCA*/
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -6460,7 +6463,7 @@ pre code {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #7D997D;
+  background-color: #CADDCA;
   color: #000;
   line-height: 1.6;
   margin: auto;
@@ -6482,23 +6485,23 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #000;
-  text-shadow: 0 0 3px #0F0;
+  text-shadow: 0 0 3px #ffffff;
   text-align: center;
 }
 
 a {
-  color: #0F0;
+  color: #054205;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-  color: #0F0;
+  color: #054205;
 }
 
 button {
   font-family: "Roboto", sans-serif;
-  background-color: #0F0;
-  color: #7D997D;
+  background-color: #054205;
+  color: #CADDCA;
   padding: 0.5em 1em;
   border-radius: 0.25em;
   cursor: pointer;
@@ -6673,8 +6676,8 @@ input, textarea, select {
 }
 
 .technologies-container .grid-item {
-  background: #595959;
-  border: 1px solid #ccc;
+  background: #CADDCA;
+  border: 1px solid #153315;
   padding: 20px;
   text-align: center;
 }
@@ -6716,7 +6719,7 @@ input, textarea, select {
 .technology-page-container .sidebar {
   grid-area: sidebar;
   padding: 20px;
-  background-color: #000;
+  background-color: transparent;
 }
 
 .technology-page-container .sidebar a {
@@ -6726,7 +6729,7 @@ input, textarea, select {
   text-decoration: none;
 }
 .technology-page-container .sidebar a:hover {
-  color: #0F0;
+  color: #054205;
 }
 
 .technology-page-container .content {
@@ -6742,4 +6745,7 @@ input, textarea, select {
   .technology-page-container .sidebar {
     display: none;
   }
+}
+.nav a, .nav-toggle {
+  color: #153315;
 }

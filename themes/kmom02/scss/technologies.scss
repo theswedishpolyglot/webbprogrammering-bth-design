@@ -22,8 +22,8 @@
 }
 
 .technologies-container .grid-item {
-    background: #595959;
-    border: 1px solid #ccc;
+    background: $box-color;
+    border: 1px solid $border-color;
     padding: 20px;
     text-align: center;  
 
@@ -75,7 +75,7 @@
 .technology-page-container .sidebar {
     grid-area: sidebar;
     padding: 20px;
-    background-color: #000;
+    background-color: transparent;
 }
 
 .technology-page-container .sidebar a {

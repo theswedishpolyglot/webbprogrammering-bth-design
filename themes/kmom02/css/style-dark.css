@@ -6674,7 +6674,7 @@ input, textarea, select {
 
 .technologies-container .grid-item {
   background: #595959;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   padding: 20px;
   text-align: center;
 }
@@ -6716,7 +6716,7 @@ input, textarea, select {
 .technology-page-container .sidebar {
   grid-area: sidebar;
   padding: 20px;
-  background-color: #000;
+  background-color: transparent;
 }
 
 .technology-page-container .sidebar a {
