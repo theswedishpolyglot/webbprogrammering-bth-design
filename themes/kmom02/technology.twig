@@ -1,0 +1,26 @@
+{# technology.twig #}
+
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    {% block content %}
+    <div class="technology-page-container">
+
+            <aside class="sidebar">
+                {% for page in pages("technology") if not page.hidden %}
+                <a href="{{ page.url }}">{{ page.title }}</a>
+                {% endfor %}
+            </aside>
+            <article class="content">
+                {{ content }}
+            </article>
+
+    </div>
+    {% endblock %}
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

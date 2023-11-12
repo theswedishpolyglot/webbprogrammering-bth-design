@@ -6650,3 +6650,96 @@ input, textarea, select {
     padding-right: 15px;
   }
 }
+/* --- Technologies Main Page --- */
+.technologies-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.technologies-container .grid-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.technologies-container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.technologies-container .grid-item {
+  background: #595959;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+.technologies-container .grid-item:nth-child(1) {
+  grid-column: span 3;
+}
+.technologies-container .grid-item:nth-child(2), .technologies-container .grid-item:nth-child(3), .technologies-container .grid-item:nth-child(4), .technologies-container .grid-item:nth-child(6) {
+  grid-column: span 1;
+}
+.technologies-container .grid-item:nth-child(5) {
+  grid-column: span 2;
+}
+.technologies-container .grid-item:nth-child(7) {
+  grid-column: span 3;
+}
+
+@media (max-width: 600px) {
+  .technologies-container .grid-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .technologies-container .grid-container .grid-item {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-bottom: 10px;
+  }
+}
+/* --- Technology Pages --- */
+.technology-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "sidebar content";
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+}
+
+.technology-page-container .sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+  background-color: #000;
+}
+
+.technology-page-container .sidebar a {
+  display: block;
+  color: #818181;
+  padding: 10px;
+  text-decoration: none;
+}
+.technology-page-container .sidebar a:hover {
+  color: #0F0;
+}
+
+.technology-page-container .content {
+  grid-area: content;
+  padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .technology-page-container {
+    grid-template-areas: "content";
+    grid-template-columns: 1fr;
+  }
+  .technology-page-container .sidebar {
+    display: none;
+  }
+}

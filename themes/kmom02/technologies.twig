@@ -1,0 +1,29 @@
+{# technologies.twig #}
+
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+
+        {% block content %}
+        <div class="technologies-container">
+            <header class="grid-header">
+                <h1>{{ meta.title }}</h1>
+            </header>
+            <main class="grid-container">
+                {% for page in pages("technology") if not page.hidden %}
+                <div class="grid-item">
+                    <a href="{{ page.url }}">{{ page.title }}</a>
+                </div>
+                {% endfor %}
+            </main>
+        </div>
+        {% endblock %}
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
