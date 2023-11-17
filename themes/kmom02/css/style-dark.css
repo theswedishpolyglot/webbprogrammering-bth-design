@@ -6562,6 +6562,11 @@ input, textarea, select {
   padding: 0 15px;
 }
 
+.sheet {
+  width: 100%;
+  height: 200px;
+}
+
 @media (max-width: 400px) {
   body, html {
     width: 100%;
@@ -6741,5 +6746,80 @@ input, textarea, select {
   }
   .technology-page-container .sidebar {
     display: none;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+.embed-container {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 56.25%;
+  margin: 0 auto;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+    max-width: 300px;
   }
 }

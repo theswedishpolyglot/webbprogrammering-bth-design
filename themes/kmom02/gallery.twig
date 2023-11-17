@@ -1,0 +1,29 @@
+{% include 'incl/header.twig' %}
+
+<body class="gallery-page">
+    {% include 'incl/nav.twig' %}
+
+    {% block content %}
+    <div class="gallery-container">
+        {% for image in images %}
+        <div class="grid-item">
+            <img src="{{ image.src }}"
+                    srcset="{{ image.src }}?w=300 300w,
+                            {{ image.src }}?w=600 600w,
+                            {{ image.src }}?w=1200 1200w"
+                    sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px, 1200px"
+                    alt="{{ image.alt }}">
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="embed-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=e2GnnxmWPpiwaUVN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    {% endblock %}
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

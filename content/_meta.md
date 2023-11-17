@@ -3,7 +3,7 @@ Logo: assets/img/Apple MacBook Pro.png
 Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
-      url: https://github.com/AuroraBTH
+      url: https://github.com/theswedishpolyglot/webbprogrammering-bth-design
       icon: fab fa-github
     - title: Dark Mode
       url: ?action=theme
