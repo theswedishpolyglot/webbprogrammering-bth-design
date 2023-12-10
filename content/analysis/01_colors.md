@@ -4,7 +4,7 @@ Template: analysis
 Description: Color analysis.
 ---
 
-# Färganalys
+# Rapport om färganalys
 =======================
 
 Denna rapport syftar till att analysera färgpaletter och typografi hos olika webbplatser, för att utforska hur dessa element möjligtvis bidrar till den känslomässiga upplevelse som webbplatserna avser att skapa.
