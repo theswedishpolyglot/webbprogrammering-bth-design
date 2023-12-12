@@ -1,8 +1,10 @@
-$font-family: 'Roboto', sans-serif;
-$font-color: #e0e0e0;
-$font-alternative-color: #0F0;
-$accent-color: #0F0;
-$h-border-color: #0F0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+$font-family: 'Roboto Mono', monospace;
+$font-color: #00FF41;
+$font-alternative-color: #00FF41;
+$accent-color: #00FF41;
+$h-border-color: #00FF41;
 $background-color: #000;
 $background-alternative-color: #121212;
 $border-color: #333;

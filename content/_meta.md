@@ -1,6 +1,8 @@
 ---
-Logo: image/Apple MacBook Pro.png
+Title: Meta
+Logo: assets/img/site_logo.png
 Tagline: My portfolio.
+lang: en
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/theswedishpolyglot/webbprogrammering-bth-design

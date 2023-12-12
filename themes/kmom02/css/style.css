@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -6459,7 +6460,7 @@ pre code {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   background-color: #CADDCA;
   color: #000;
   line-height: 1.6;
@@ -6526,7 +6527,7 @@ img {
 }
 
 .logo {
-  width: 150px;
+  width: 250px;
   max-width: 100%;
   max-height: 100%;
   height: 50px;
@@ -6563,8 +6564,8 @@ input, textarea, select {
 }
 
 .sheet {
-  width: 100%;
-  height: 200px;
+  width: 600px;
+  height: 300px;
 }
 
 @media (max-width: 400px) {
@@ -6722,6 +6723,7 @@ input, textarea, select {
   grid-area: sidebar;
   padding: 20px;
   background-color: transparent;
+  max-width: 400px;
 }
 
 .technology-page-container .sidebar a {
@@ -6737,6 +6739,7 @@ input, textarea, select {
 .technology-page-container .content {
   grid-area: content;
   padding: 0 20px;
+  max-width: 800px;
 }
 
 @media (max-width: 600px) {
@@ -6823,6 +6826,45 @@ body {
     max-width: 300px;
   }
 }
+.green-line {
+  width: 550%;
+  height: auto;
+  position: static;
+  padding-left: 200%;
+  margin: 0;
+  filter: grayscale(100%) brightness(0%);
+}
+
+.line-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.line-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 4px;
+  background-color: #000;
+  width: 0;
+  animation: drawLine 2s ease forwards;
+}
+
+@keyframes drawLine {
+  to {
+    width: 100%;
+  }
+}
+.sidebar a {
+  color: #000 !important;
+}
+
+.main a {
+  color: #000;
+}
+
 .nav a, .nav-toggle {
   color: #153315;
 }

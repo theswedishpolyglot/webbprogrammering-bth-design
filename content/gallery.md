@@ -1,6 +1,7 @@
 ---
 Title: Gallery
 Description: This is the gallery page.
+lang: en
 ---
 
 <div class="gallery-container">
@@ -218,7 +219,9 @@ Description: This is the gallery page.
          alt="Image 21">
 </a></div>
 </div>
-
+<div class="green-line"><br><br>
+    <img src="assets/img/green-line.svg" alt="Green Line"><br><br>
+</div>
 <div class="embed-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=e2GnnxmWPpiwaUVN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
